@@ -159,22 +159,74 @@ public class Aula01Aplicados {
 	}
 
 	public void ex08() {
-		System.out.println("A data esta hard coded na linha ");
-		System.out.println(" ");
-		String inputDate = "31/02/2023"; 
+		System.out.println("Digite uma data");
+
+
+		String inputDate = sc.nextLine(); 
 		String validationResult = validateDate(inputDate);
 		System.out.println(validationResult);
 	}
 
 	public void ex09() {
-		System.out.println("Esse exercicio foi feito com o auxilio do GPT, por "
-				+ "motivos de eu não ter ideia de por onde começar, ele m explicou"
-				+ " que posso usar o conceito de Zeller!");
 		System.out.println(" ");
 		System.out.println("A data esta hard Coded");
 		System.out.println(" ");
 		String inputDate = "15/08/2024"; 
 		String dayOfWeek = calculaDiaSemana(inputDate);
 		System.out.println("A data " + inputDate + " será uma " + dayOfWeek + " em 2024.");
+	}
+
+	public void desafio2() {
+		Scanner scMenu = new Scanner(System.in);
+		System.out.println("Digite uma data no fomato mm/dd/yyyy");
+
+		String inputDate = sc.nextLine(); 
+		String validationResult = validateDate(inputDate);
+		System.out.println(validationResult);
+		System.out.println(" ");
+
+		System.out.println("Descobrir dia da semana em 2024 = 0");
+		System.out.println("Alterar data = 1");
+		System.out.println("Sair = 2");
+
+		int comando = scMenu.nextInt();
+
+		while(comando != 2) {
+			switch (comando) {
+			case 0:
+				String dayOfWeek = calculaDiaSemana(inputDate);
+				StringBuilder dataSemAno = new StringBuilder();
+				String[] dataSplit = inputDate.split("/");
+
+				dataSemAno.append(dataSplit[0]);
+				dataSemAno.append("/");
+				dataSemAno.append(dataSplit[1]);
+
+				System.out.println("A data " + dataSemAno.toString() + " será uma " + dayOfWeek + " em 2024.");
+				System.out.println(" ");
+				break;
+			case 1:
+				System.out.println("Digite uma data no fomato mm/dd/yyyy");
+				String inputDate1 = sc.nextLine(); 
+				String validationResult1 = validateDate(inputDate1);
+				System.out.println(validationResult1);
+				System.out.println(" ");
+				break;
+			case 2:
+				System.out.println("Fim do programa");
+				System.out.println(" ");
+				return;
+
+			}
+			System.out.println("Descobrir dia da semana em 2024 = 0");
+			System.out.println("Alterar data = 1");
+			System.out.println("Sair = 2");
+			System.out.println(" ");
+			comando = scMenu.nextInt();
+
+		}
+
+
+
 	}
 }

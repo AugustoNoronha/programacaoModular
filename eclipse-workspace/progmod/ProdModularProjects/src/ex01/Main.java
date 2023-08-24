@@ -30,8 +30,11 @@ public class Main {
 //		aula01Documentos.ex010();
 //		System.out.println("Ex11");
 //		aula01Documentos.ex011();
-		System.out.println("Ex12");
-		aula01Documentos.ex012();
+//		System.out.println("Ex12");
+//		aula01Documentos.ex012();
+		System.out.println("Desafio #2");
+		aula01Aplicados.desafio2();
+		
 	}
 
 }
