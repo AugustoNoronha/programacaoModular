@@ -8,10 +8,6 @@ public class Professor extends Pessoa {
     }
     private Long Matricula;
 
-    public Professor(Long matricula) {
-        Matricula = matricula;
-    }
-
     public Professor(String nome, String email, Long matricula) {
         super(nome, email);
         Matricula = matricula;

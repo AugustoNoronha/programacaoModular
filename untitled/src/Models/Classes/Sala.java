@@ -4,8 +4,6 @@ public class Sala {
     private int Codigo;
     private int IdPredio;
 
-    public Sala() {
-    }
 
     public Sala(int codigo, int idPredio) {
         Codigo = codigo;

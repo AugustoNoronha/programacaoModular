@@ -8,10 +8,6 @@ public class Profissional extends Pessoa {
     }
     private Long Matricula;
 
-    public Profissional(Long matricula) {
-        Matricula = matricula;
-    }
-
     public Profissional(String nome, String email, Long matricula) {
         super(nome, email);
         Matricula = matricula;

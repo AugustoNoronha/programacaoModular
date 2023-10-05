@@ -9,9 +9,6 @@ public class Trabalho {
 
     private List<Estudante> Estudantes;
 
-    public Trabalho() {
-    }
-
     public Trabalho(int id, String titulo, String resumo) {
         Id = id;
         Titulo = titulo;

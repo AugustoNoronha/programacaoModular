@@ -13,4 +13,28 @@ public abstract class Instituicao {
         AreaAtuacao = areaAtuacao;
         Local = local;
     }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String nome) {
+        Nome = nome;
+    }
+
+    public String getAreaAtuacao() {
+        return AreaAtuacao;
+    }
+
+    public void setAreaAtuacao(String areaAtuacao) {
+        AreaAtuacao = areaAtuacao;
+    }
+
+    public String getLocal() {
+        return Local;
+    }
+
+    public void setLocal(String local) {
+        Local = local;
+    }
 }

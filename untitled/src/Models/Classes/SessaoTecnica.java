@@ -13,8 +13,6 @@ public class SessaoTecnica {
 
     private List<Pessoa> Pessoas;
 
-    public SessaoTecnica() {
-    }
 
     public SessaoTecnica(Date data, Time horaInicio, Time horaFIm) {
         Data = data;

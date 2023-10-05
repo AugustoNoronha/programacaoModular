@@ -5,9 +5,6 @@ import java.sql.Time;
 public class Apresentacao {
     private Time HoraApresentacao;
 
-    public Apresentacao() {
-    }
-
     public Apresentacao(Time horaApresentacao) {
         HoraApresentacao = horaApresentacao;
     }
@@ -18,5 +15,8 @@ public class Apresentacao {
 
     public void setHoraApresentacao(Time horaApresentacao) {
         HoraApresentacao = horaApresentacao;
+    }
+    public String toString() {
+        return "HoraApresentacao: " + HoraApresentacao;
     }
 }

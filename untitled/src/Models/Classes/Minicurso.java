@@ -1,5 +1,7 @@
 package Models.Classes;
 
+import Models.Abstratas.Pessoa;
+
 import java.sql.Date;
 import java.sql.Time;
 import java.util.List;
@@ -8,11 +10,7 @@ public class Minicurso {
     private Date Data;
     private Time HoraInicio;
     private Time HoraFim;
-
     private List<Pessoa> Pessoas;
-
-    public Minicurso() {
-    }
 
     public Minicurso(Date data, Time horaInicio, Time horaFim) {
         Data = data;
@@ -55,7 +53,7 @@ public class Minicurso {
         return Pessoas;
     }
 
-    public void setPessoas(List<Pessoa> pessoas) {
-        Pessoas = pessoas;
-    }
+//    public void setPessoas(List<Pessoa> pessoas) {
+//        Pessoas = pessoas;
+//    }
 }
